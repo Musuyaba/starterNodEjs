@@ -1,0 +1,26 @@
+{
+  "name": "startervenomongodb",
+  "version": "1.0.0",
+  "description": "Starter proyek menggunakan Vue.js, Express, Node.js, MongoDB",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Musuyaba/starterVenoMongoDB.git"
+  },
+  "author": "musuyaba",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Musuyaba/starterVenoMongoDB/issues"
+  },
+  "homepage": "https://github.com/Musuyaba/starterVenoMongoDB#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.10",
+    "morgan": "^1.10.0",
+    "validator": "^13.7.0"
+  }
+}
