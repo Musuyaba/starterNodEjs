@@ -1,8 +1,8 @@
 exports.index = function (req, res) {
     var exampleJson = [
-        { name: 'Sammy', organization: "DigitalOcean", birth_year: 2012 },
-        { name: 'Tux', organization: "Linux", birth_year: 1996 },
-        { name: 'Moby Dock', organization: "Docker", birth_year: 2013 }
+        { name: 'Sammy', organization: "Test A", birth_year: 2012 },
+        { name: 'Tux', organization: "Test B", birth_year: 1996 },
+        { name: 'Moby Dock', organization: "Test C", birth_year: 2013 }
     ];
 
     res.render('pages/index', {
