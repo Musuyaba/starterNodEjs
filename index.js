@@ -9,6 +9,10 @@ connectDB();
 const app = express(); 
 const PORT = 8000;
 
+// Using engine ejs
+app.set('view engine', 'ejs');
+app.set('views', './app/views')
+
 // log request
 app.use(morgan('tiny'));
 
@@ -23,7 +27,9 @@ app.use(bodyParser.json());
 const apiRouter = require('./app/routes/apiRoutes');
 app.use('/api', apiRouter);
 
-
+//Import and use web router
+const webRouter = require('./app/routes/webRoutes');
+app.use('/', webRouter);
 
 // running webserver 
 app.listen(PORT, '0.0.0.0', function(){
